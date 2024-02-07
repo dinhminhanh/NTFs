@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="903.0" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="header" text="Trang chủ">
+         <font>
+            <Font name="Montserrat ExtraBold" size="32.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="111.0" prefWidth="883.0" styleClass="xem_danh_sach" fx:id="xem_danh_sach">
+         <children>
+            <Button fx:id="search_btn" layoutX="728.0" layoutY="29.0" mnemonicParsing="false" onAction="#searchButtonPressed" prefHeight="54.0" prefWidth="105.0" text="Tìm kiếm" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="29.0">
+               <font>
+                  <Font name="Montserrat Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="search_btn" />
+               </styleClass>
+            </Button>
+            <TextField fx:id="search" layoutX="28.0" layoutY="29.0" prefHeight="54.0" prefWidth="377.0" promptText="Tìm kiếm hashtag/tag" styleClass="btn">
+               <font>
+                  <Font name="Montserrat Regular" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="363.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/search.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="socialOption" layoutX="483.0" layoutY="29.0" prefHeight="54.0" prefWidth="187.0" promptText="Chọn mạng xã hội" styleClass="btn" />
+         </children>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <AnchorPane prefWidth="883.0">
+         <children>
+            <Label layoutX="163.0" layoutY="20.0" text="Người dùng" AnchorPane.leftAnchor="120.0">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="695.0" layoutY="20.0" text="Ngày đăng" AnchorPane.rightAnchor="310.0">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <ScrollPane prefHeight="384.0" prefWidth="903.0" styleClass="scrollpane">
+         <content>
+            <VBox fx:id="showArea" prefHeight="308.0" prefWidth="883.0" />
+         </content></ScrollPane>
+   </children>
+</VBox>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1137.0" styleClass="main" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="734.0" prefWidth="125.0">
+         <children>
+            <AnchorPane prefHeight="761.0" prefWidth="125.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="menu_btn" layoutX="38.0" layoutY="200.0" mnemonicParsing="false" onAction="#TrangChu" styleClass="menu_btn">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/grid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="38.0" layoutY="291.0" mnemonicParsing="false" onAction="#XemDanhSach" styleClass="menu_btn">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/postcard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="38.0" layoutY="385.0" mnemonicParsing="false" onAction="#TimHotHashtag" styleClass="menu_btn">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/fire.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="38.0" layoutY="476.0" mnemonicParsing="false" onAction="#PhanTich" styleClass="menu_btn">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/bar-chart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="38.0" layoutY="566.0" mnemonicParsing="false" onAction="#Crawl" styleClass="menu_btn">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/crawl-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane fx:id="logo" layoutX="31.0" layoutY="32.0" prefHeight="64.0" prefWidth="64.0" styleClass="logo" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="36.0">
+                     <children>
+                        <Text layoutX="5.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NFT's">
+                           <font>
+                              <Font name="Open Sans Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Rectangle fx:id="menu_selected" arcHeight="5.0" arcWidth="5.0" fill="#e5f2fe" height="70.0" layoutX="12.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="menu_selected" width="5.0" AnchorPane.leftAnchor="8.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="1012.0">
+         <children>
+            <VBox prefHeight="826.0" prefWidth="1012.0" styleClass="showcase">
+               <children>
+                  <VBox fx:id="main" prefHeight="610.0" prefWidth="897.0">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="50.0" />
+                     </VBox.margin></VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

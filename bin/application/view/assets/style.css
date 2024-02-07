@@ -1,0 +1,85 @@
+
+.main{
+	-fx-background-color: #1E1E1E;
+}
+
+.scrollpane{
+	-fx-background: transparent; 
+	-fx-background-color: transparent;
+}
+
+.showcase{
+	-fx-background-color: #FFF;
+	-fx-background-radius: 40px;
+}
+
+.logo{
+	-fx-background-radius: 20px;
+	-fx-background-color: #F6F0D8;
+}
+
+.menu_selected{
+	-fx-background-color: #E5F2FE;
+	-fx-background-radius: 50px;
+}
+
+.menu_btn{
+	-fx-background-color: transparent;
+}
+
+.btn{
+	-fx-background-color: #FFF;
+	-fx-background-radius: 20px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 5, 0, 0, 0);
+}
+
+
+.toggle_btn{
+	-fx-background-color: #F6F0D8;
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, -5, 3, 3);
+}
+
+.toggle_btn:selected{
+	-fx-background-color: #F7D497;
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, -5, 3, 3);
+}
+
+.search_btn{
+	-fx-background-color: #1E1E1E;
+}
+
+.search_btn:pressed, :detailButton:pressed{
+	-fx-background-color: #555555;
+}
+
+.xem_danh_sach{
+	-fx-background-color: #E5DEF0;
+	-fx-background-radius: 30px;
+}
+
+.tim_hashtag_hot{
+	-fx-background-color: #D6EDDA;
+	-fx-background-radius: 30px;
+}
+
+.phan_tich{
+	-fx-background-color: #F6F0D8;
+	-fx-background-radius: 30px;
+}
+
+.itemList{
+	-fx-background-color: #FFF;
+	-fx-background-radius: 30px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 3, 3);
+}
+
+.item_ava{
+	-fx-background-color: #E5F2FE;
+	-fx-background-radius: 20px;
+}
+
+.detail{
+	-fx-font-color:#000;
+}

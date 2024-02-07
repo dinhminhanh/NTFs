@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="883.0" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="header" text="Trang chủ">
+         <font>
+            <Font name="Montserrat ExtraBold" size="32.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="40.0" prefWidth="146.0" text="Tính năng">
+         <font>
+            <Font name="Montserrat SemiBold" size="28.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="360.0" prefWidth="493.0">
+         <children>
+            <AnchorPane fx:id="phan_tich" layoutX="625.0" layoutY="22.0" prefHeight="182.0" prefWidth="258.0" styleClass="phan_tich" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phân tích tương quan" wrappingWidth="220.15997314453125" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="PhanTich_btn" mnemonicParsing="false" onAction="#showButtonPressed" prefHeight="64.0" prefWidth="64.0" styleClass="btn" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="33.0">
+                     <graphic>
+                        <ImageView fx:id="btn2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/bar-chart-black.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="tim_hashtag_hot" layoutX="313.0" layoutY="22.0" prefHeight="182.0" prefWidth="258.0" styleClass="tim_hashtag_hot" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text layoutX="9.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm hashtag hot nhất" wrappingWidth="229.15997314453125" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="TimHotHashtag_btn" mnemonicParsing="false" onAction="#showButtonPressed" prefHeight="64.0" prefWidth="64.0" styleClass="btn" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="33.0">
+                     <graphic>
+                        <ImageView fx:id="btn1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/fire-black.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="29.0" layoutY="22.0" prefHeight="182.0" prefWidth="258.0" styleClass="xem_danh_sach" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="funtion" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách bài viết" wrappingWidth="183.159912109375" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="XemDanhSach_btn" mnemonicParsing="false" onAction="#showButtonPressed" prefHeight="64.0" prefWidth="64.0" styleClass="btn" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="33.0">
+                     <graphic>
+                        <ImageView fx:id="btn" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/postcard-black.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

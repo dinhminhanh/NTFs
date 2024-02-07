@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="903.0" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="header" text="Trang chủ">
+         <font>
+            <Font name="Montserrat ExtraBold" size="32.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="111.0" prefWidth="883.0" styleClass="phan_tich" stylesheets="@assets/style.css">
+         <children>
+            <TextField fx:id="search" layoutX="41.0" layoutY="28.0" prefHeight="54.0" prefWidth="377.0" promptText="Tìm kiếm NFT Collection" styleClass="btn" />
+            <Button fx:id="search_btn" layoutX="728.0" layoutY="29.0" mnemonicParsing="false" onAction="#searchButtonPressed" prefHeight="54.0" prefWidth="105.0" text="Tìm kiếm" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="29.0">
+               <font>
+                  <Font name="Montserrat Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="search_btn" />
+               </styleClass>
+            </Button>
+            <ComboBox fx:id="marketplace" layoutX="482.0" layoutY="28.0" prefHeight="54.0" prefWidth="187.0" promptText="Marketplace" styleClass="btn" />
+         </children>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <AnchorPane prefHeight="34.0" prefWidth="883.0">
+         <children>
+            <Label layoutX="163.0" layoutY="20.0" text="Collection" AnchorPane.leftAnchor="120.0">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="399.0" layoutY="20.0" text="Volume" AnchorPane.rightAnchor="340.0">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="695.0" layoutY="20.0" text="Rank" AnchorPane.rightAnchor="170.0">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <ScrollPane prefHeight="384.0" prefWidth="903.0" styleClass="scrollpane">
+         <content>
+            <VBox fx:id="showArea" prefHeight="308.0" prefWidth="883.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="903.0" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="header" text="Crawl Data">
+         <font>
+            <Font name="Montserrat ExtraBold" size="32.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="216.0" prefWidth="903.0" style="-fx-background-color: E5F2FE;" styleClass="xem_danh_sach">
+         <children>
+            <Label layoutX="68.0" layoutY="48.0" text="Chọn nền tảng dữ liệu  " AnchorPane.leftAnchor="80.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="crawlBtn" layoutX="727.0" layoutY="39.0" mnemonicParsing="false" onAction="#crawlButtonPressed" prefHeight="54.0" prefWidth="105.0" text="Crawl" textFill="WHITE" AnchorPane.rightAnchor="71.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="search_btn" />
+               </styleClass>
+            </Button>
+            <ComboBox fx:id="socialOption" layoutX="384.0" layoutY="39.0" prefHeight="54.0" prefWidth="284.0" styleClass="btn" AnchorPane.rightAnchor="235.0" />
+            <Label fx:id="finishText" alignment="CENTER" layoutX="388.0" layoutY="150.0" text="Thành công !!!">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>
